@@ -53,7 +53,7 @@ for row in db:
 #--> addd your Python code here
 #clf =
 
-clf = tree.DecisionTreeClassifier(criterion='entropy',max_depth=2)
+clf = tree.DecisionTreeClassifier(criterion='entropy',max_depth=2,random_state=42)
 clf = clf.fit(X,Y)
 
 #plotting decision tree
